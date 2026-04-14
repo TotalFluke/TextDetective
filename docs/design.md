@@ -37,6 +37,8 @@ Not every case is a mystery. Cases fall broadly into two types:
 
 In both types, **prosecution outcome is the measure of success**. Closing a case means bringing it to prosecution; the result — charges upheld, reduced, or dismissed — summarises the player's performance on that case. A technically solved case with weak evidence leads to acquittal. Over-investigation that damages the chain of custody or tips off a suspect also counts against the player.
 
+It is possible to successfully prosecute the wrong person. The game does not always immediately expose this — the player may close the case with a conviction and appear to succeed. However, a wrongful conviction can surface consequences later: the real perpetrator remains active in the world and may appear in future cases, evidence may eventually emerge that undermines the conviction, or the wrongful case may return as a new case thread (appeal, exoneration, misconduct investigation). Whether and when a wrongful prosecution comes back to punish the player is deliberately variable — sometimes it is never discovered, sometimes it unravels immediately, and sometimes it resurfaces much later. The exact mechanics of how wrongful conviction probability, detection, and consequences interact with player scoring and progression are **to be designed**.
+
 Cases are not isolated. They share a world — characters, locations, and organisations recur across cases, forming the substrate for meta-narratives. Some cases cannot be closed until the player has unlocked specific toolkit capabilities, or until another case yields a prerequisite piece of evidence. Investigative actions can spawn new cases: following a lead may uncover a second crime, and a result in one case may reframe the facts of another.
 
 ---
