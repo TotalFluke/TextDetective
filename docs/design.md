@@ -2,7 +2,7 @@
 
 ## Concept
 
-A procedurally generated detective game where the player takes the role of a detective managing a caseload of simultaneous criminal cases. Cases are worked through a menu-driven UI using an expanding toolkit of investigative actions. Cases are not always immediately solvable — some are gated by toolkit progression, others are unblocked by results from different cases. Actions taken in one case can spawn new cases or alter the nature of existing ones. Efficiency across the whole caseload is a core mechanic. Hidden meta-narratives — organised crime networks, serial offenders — span multiple cases and must be identified by the player.
+A procedurally generated detective game where the player takes the role of a detective managing a caseload of simultaneous criminal cases. Cases are worked through a menu-driven UI using an expanding toolkit of investigative actions. Some cases are mysteries requiring the perpetrator to be identified; others have a known suspect and the challenge is building sufficient evidence to prosecute. Prosecution outcome is the measure of success for every case. Cases are not always immediately solvable — some are gated by toolkit progression, others are unblocked by results from different cases. Actions taken in one case can spawn new cases or alter the nature of existing ones. Efficiency across the whole caseload is a core mechanic. Hidden meta-narratives — organised crime networks, serial offenders — span multiple cases and must be identified by the player.
 
 ---
 
@@ -14,7 +14,7 @@ The player maintains an active caseload of multiple open cases at any one time. 
 2. For a given case, the player reviews known facts and identifies leads to pursue.
 3. The player selects investigative actions from their toolkit to expand the fact set.
 4. Actions may produce new leads, spawn entirely new cases, or alter the nature of open cases — a witness interview might expose a second crime, or a forensic result might reframe the theory of an existing case.
-5. When sufficient evidence is gathered, the player reaches a conclusion and closes the case.
+5. When sufficient evidence is gathered, the player brings the case to prosecution. The outcome — charges upheld, reduced, or dismissed — is the measure of success for that case.
 6. Efficiency — minimising unnecessary actions and time across the whole caseload — is tracked and scored.
 7. Over time, patterns across cases reveal meta-narratives that the player can choose to pursue.
 
@@ -28,7 +28,14 @@ Each case is procedurally generated and contains:
 - A crime scene with location details
 - Details of victims, suspects, and witnesses
 - An initial set of discoverable facts seeded at case start
-- A hidden solution generated at case creation, against which the player's conclusion is evaluated
+- A prosecution target — the evidence threshold required to bring a successful case
+
+Not every case is a mystery. Cases fall broadly into two types:
+
+- **Whodunit cases** — the perpetrator is unknown and must be identified through investigation before evidence can be assembled against them.
+- **Build-the-case cases** — the likely perpetrator is known or strongly suspected from the outset; the work is gathering sufficient admissible evidence to prosecute successfully.
+
+In both types, **prosecution outcome is the measure of success**. Closing a case means bringing it to prosecution; the result — charges upheld, reduced, or dismissed — summarises the player's performance on that case. A technically solved case with weak evidence leads to acquittal. Over-investigation that damages the chain of custody or tips off a suspect also counts against the player.
 
 Cases are not isolated. They share a world — characters, locations, and organisations recur across cases, forming the substrate for meta-narratives. Some cases cannot be closed until the player has unlocked specific toolkit capabilities, or until another case yields a prerequisite piece of evidence. Investigative actions can spawn new cases: following a lead may uncover a second crime, and a result in one case may reframe the facts of another.
 
@@ -68,11 +75,12 @@ Toolkit actions are unlocked progressively as the player advances (see Progressi
 
 Using tools costs resources. The player is scored on:
 
+- Prosecution outcome (charges upheld, reduced, or dismissed)
 - Number of actions taken (fewer is better for a given outcome)
 - Time elapsed (some actions are time-sensitive)
 - Budget spent
 
-Unnecessary or speculative actions are penalised. The player is incentivised to reason carefully before acting rather than exhausting all available options. Efficiency is measured across the whole caseload, not per case — the cost of actions in one case affects the overall score.
+Unnecessary or speculative actions are penalised. Actions that compromise the investigation — tipping off a suspect, breaking chain of custody, insufficient warrant coverage — can weaken the prosecution case regardless of what the player knows. The player is incentivised to reason carefully before acting rather than exhausting all available options. Efficiency is measured across the whole caseload, not per case — the cost of actions in one case affects the overall score.
 
 ---
 
