@@ -2,18 +2,21 @@
 
 ## Concept
 
-A procedurally generated detective game where the player takes the role of a detective solving criminal cases. Cases are presented through a menu-driven UI, and the player uses an expanding toolkit of investigative actions to uncover facts and reach a conclusion. Efficiency in how tools are used is a core mechanic. Hidden meta-narratives spanning multiple cases — organised crime networks, serial offenders — emerge organically and must be identified by the player.
+A procedurally generated detective game where the player takes the role of a detective managing a caseload of simultaneous criminal cases. Cases are worked through a menu-driven UI using an expanding toolkit of investigative actions. Cases are not always immediately solvable — some are gated by toolkit progression, others are unblocked by results from different cases. Actions taken in one case can spawn new cases or alter the nature of existing ones. Efficiency across the whole caseload is a core mechanic. Hidden meta-narratives — organised crime networks, serial offenders — span multiple cases and must be identified by the player.
 
 ---
 
 ## Core Gameplay Loop
 
-1. A new case is presented with an initial set of known facts.
-2. The player reviews facts and identifies leads to pursue.
+The player maintains an active caseload of multiple open cases at any one time. Cases are not always immediately solvable — some require toolkit capabilities the player hasn't yet unlocked, or are blocked on results that take time. The player must manage their attention across the caseload, progressing each case as their tools and circumstances allow.
+
+1. Multiple cases are open simultaneously; the player selects which to work on at any point.
+2. For a given case, the player reviews known facts and identifies leads to pursue.
 3. The player selects investigative actions from their toolkit to expand the fact set.
-4. Based on accumulated evidence, the player reaches a conclusion and closes the case.
-5. Efficiency — minimising unnecessary actions and time — is tracked and scored.
-6. Over time, patterns across cases reveal meta-narratives that the player can choose to pursue.
+4. Actions may produce new leads, spawn entirely new cases, or alter the nature of open cases — a witness interview might expose a second crime, or a forensic result might reframe the theory of an existing case.
+5. When sufficient evidence is gathered, the player reaches a conclusion and closes the case.
+6. Efficiency — minimising unnecessary actions and time across the whole caseload — is tracked and scored.
+7. Over time, patterns across cases reveal meta-narratives that the player can choose to pursue.
 
 ---
 
@@ -27,7 +30,7 @@ Each case is procedurally generated and contains:
 - An initial set of discoverable facts seeded at case start
 - A hidden solution generated at case creation, against which the player's conclusion is evaluated
 
-Cases are self-contained but share a world — characters, locations, and organisations can recur across cases, forming the substrate for meta-narratives.
+Cases are not isolated. They share a world — characters, locations, and organisations recur across cases, forming the substrate for meta-narratives. Some cases cannot be closed until the player has unlocked specific toolkit capabilities, or until another case yields a prerequisite piece of evidence. Investigative actions can spawn new cases: following a lead may uncover a second crime, and a result in one case may reframe the facts of another.
 
 ---
 
@@ -69,7 +72,7 @@ Using tools costs resources. The player is scored on:
 - Time elapsed (some actions are time-sensitive)
 - Budget spent
 
-Unnecessary or speculative actions are penalised. The player is incentivised to reason carefully before acting rather than exhausting all available options.
+Unnecessary or speculative actions are penalised. The player is incentivised to reason carefully before acting rather than exhausting all available options. Efficiency is measured across the whole caseload, not per case — the cost of actions in one case affects the overall score.
 
 ---
 
